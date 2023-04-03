@@ -44,11 +44,32 @@ class Student {
         this.learningPaths = learningPaths;
     }
 };
+class learningPath{
+    constructor({
+        name,
+        description,
+        listCourses = [],
+    }){
+        this.name = name;
+        this.description = description;
+        this.listCourses = listCourses;
+    }
+};
+const webDevelopment = new learningPath({
+    name: 'Web development',
+    description: 'School fullstack web development',
+    listCourses: ['HTML', 'CSS', 'JS']
+});
+const javaScript = new learningPath({
+    name: 'JavaScript',
+    description: 'School development JS',
+    listCourses: ['Basic concepts', 'DOM', 'ES6']
+});
 const jorge2 = new Student({
     name: 'Jorge',
     email: 'jorgedeltoro111@outlook.es',
     username: 'neverland',
     facebook: 'Jorge Enrique',
-    learningPaths: ['Programacion web', 'React'],
+    learningPaths: [webDevelopment, javaScript],
 });
-console.log(jorge);
+console.log(jorge2);
