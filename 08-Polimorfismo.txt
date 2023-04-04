@@ -1,0 +1,2 @@
+el polimorfismo es el cambio de comportamiento de metodos
+de clases padres, sobreescribir metodos de una super clases
